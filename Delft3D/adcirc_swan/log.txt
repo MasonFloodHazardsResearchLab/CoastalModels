@@ -1,0 +1,989 @@
+login4.stampede2(1019)$ ./adcprep
+  *****************************************
+  ADCPREP Fortran90 Version 2.3  10/18/2006
+  Serial version of ADCIRC Pre-processor
+  *****************************************
+
+ Input number of processors for parallel ADCIRC run:
+36
+ -------------------------------------------------------
+ Preparing input files for subdomains.
+ Select number or action:
+  1. partmesh
+  - partition mesh using metis ( perform this first)
+
+  2. prepall
+  - Full pre-process using default names (i.e., fort.14)
+
+  3. prepspec
+  - Full pre-process except user may specify the names
+    of input files. This option also allows the user
+    to skip the preprocessing of certain files.
+
+  4. prep15
+  - Localizes RunInfo (fort.15) file ONLY
+    Assumes a prepall has been run previously
+
+  5. prep13
+  - Localizes NodalAttributes (fort.13) file ONLY
+    Assumes a prepall has been run previously
+
+  6. hotLocalize
+  - Localizes global hotstart file ONLY
+
+  7. hotGlobalize
+  - Globalizes local hotstart files ONLY
+ -------------------------------------------------------
+2
+
+ Using default filenames.
+
+ calling: prepinput
+ use_default =  T
+ partition =  F
+ prep_all  =  T
+ prep_15   =  F
+ prep_13   =  F
+ hot_local  =  F
+ hot_global  =  F
+ File                                                      fort.14
+ WAS FOUND!  Opening & Processing file
+
+ File fort.15
+ WAS FOUND!  Opening & Processing file
+
+ Elevation Station Locations contained in fort.15
+ Velocity Station Locations Contained in fort.15
+ MET Station Locations Contained in fort.15
+ NHSTAR =            5
+ *****************************************************
+ *   Based on input and information extracted from   *
+ *   the ADCIRC UNIT 14 and 15 (grid and horiz run   *
+ *   info) files the following paramter values will  *
+ *   be set:                                         *
+ *                                                   *
+ *       MNPROC =    36                             *
+ *       MNE =   233477      MNP =   141993          *
+ *       MNEI =      12                               *
+ *       MNOPE =      3      MNETA =    160          *
+ *       MNBOU =   1429      MNVEL =  74386          *
+ *       MNTIF =      9      MNBFR =      9          *
+ *       MNSTAE =    57      MNSTAV =    57          *
+ *       MNSTAC =     1      MNSTAM =    57          *
+ *       MNWP =  141993                               *
+ *       MNWLAT =     1      MNWLON =     1          *
+ *       MNFFR =      1                              *
+ *                                                   *
+ *   Also, NWS=+-6 meteorological forcing is used,   *
+ *   Also, ABS(NWS)>=100 wave stress forcing is used,*
+ *   means and variance calculation will NOT be made,*
+ *   the GWCE matrix will be left in consistent form *
+ *   and an iterative solver will be used            *
+ *****************************************************
+
+ from alloc_main1:
+
+ memory currently allocated =   -832245704  bytes
+ memory high water mark     =      6171420  bytes
+
+
+ memory currently allocated =     18180792  bytes
+ memory high water mark     =    868607288  bytes
+
+ Global Grid file read successfully.
+ INFO: Opening file partmesh.txt
+ INFO: Closed partmesh.txt file.
+ INFO: Start reading in fort.15.
+ nstae=          57
+ Elevation Station Locations contained in fort.15
+Elevation recording station       1 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1169435.40899746
+
+Elevation recording station       2 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1203865.40989067
+
+Elevation recording station       3 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1174248.61154435
+
+Elevation recording station       4 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1156978.89822047
+
+Elevation recording station       5 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1145832.83743952
+
+Elevation recording station       6 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1146565.48786702
+
+Elevation recording station       7 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1144790.93799097
+
+Elevation recording station       8 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1040541.45828857
+
+Elevation recording station       9 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    834056.296008805
+
+Elevation recording station      10 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    726889.940647328
+
+Elevation recording station      11 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    616210.995294672
+
+Elevation recording station      12 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    551762.834859589
+
+Elevation recording station      13 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    417876.436781021
+
+Elevation recording station      14 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    323914.595352888
+
+Elevation recording station      15 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    258651.365314436
+
+Elevation recording station      16 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    268968.212241525
+
+Elevation recording station      17 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    308633.971681872
+
+Elevation recording station      18 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    333143.885976827
+
+Elevation recording station      19 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    282256.977158700
+
+Elevation recording station      20 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    257491.450594111
+
+Elevation recording station      21 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    245768.599650018
+
+Elevation recording station      22 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    206084.284091728
+
+Elevation recording station      23 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    184804.957469978
+
+Elevation recording station      24 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    91002.3478048919
+
+Elevation recording station      25 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    55350.3770457469
+
+Elevation recording station      26 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    104414.391996770
+
+Elevation recording station      27 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    123809.322318315
+
+Elevation recording station      28 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    196639.775271293
+
+Elevation recording station      29 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    172674.806496453
+
+Elevation recording station      30 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    91870.0245168905
+
+Elevation recording station      31 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    90302.5030536758
+
+Elevation recording station      32 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    11259.1633494348
+
+Elevation recording station      33 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    3379.00349100353
+
+Elevation recording station      35 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    24677.5341520006
+
+Elevation recording station      36 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    82720.1668263820
+
+Elevation recording station      37 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    5491.80688986221
+
+Elevation recording station      38 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    390.580647580282
+
+Elevation recording station      40 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    320.590873550741
+
+Elevation recording station      45 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    162.772548212099
+
+Elevation recording station      48 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    398.009282299107
+
+Elevation recording station      49 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    7958.60760192468
+
+Elevation recording station      50 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    7784.57762184876
+
+Elevation recording station      51 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    4959.65473688587
+
+Elevation recording station      52 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    8167.91902583526
+
+ Velocity Station Locations Contained in fort.15
+Velocity recording station        1 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1169435.40899746
+
+Velocity recording station        2 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1203865.40989067
+
+Velocity recording station        3 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1174248.61154435
+
+Velocity recording station        4 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1156978.89822047
+
+Velocity recording station        5 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1145832.83743952
+
+Velocity recording station        6 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1146565.48786702
+
+Velocity recording station        7 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1144790.93799097
+
+Velocity recording station        8 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1040541.45828857
+
+Velocity recording station        9 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    834056.296008805
+
+Velocity recording station       10 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    726889.940647328
+
+Velocity recording station       11 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    616210.995294672
+
+Velocity recording station       12 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    551762.834859589
+
+Velocity recording station       13 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    417876.436781021
+
+Velocity recording station       14 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    323914.595352888
+
+Velocity recording station       15 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    258651.365314436
+
+Velocity recording station       16 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    268968.212241525
+
+Velocity recording station       17 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    308633.971681872
+
+Velocity recording station       18 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    333143.885976827
+
+Velocity recording station       19 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    282256.977158700
+
+Velocity recording station       20 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    257491.450594111
+
+Velocity recording station       21 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    245768.599650018
+
+Velocity recording station       22 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    206084.284091728
+
+Velocity recording station       23 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    184804.957469978
+
+Velocity recording station       24 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    91002.3478048919
+
+Velocity recording station       25 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    55350.3770457469
+
+Velocity recording station       26 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    104414.391996770
+
+Velocity recording station       27 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    123809.322318315
+
+Velocity recording station       28 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    196639.775271293
+
+Velocity recording station       29 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    172674.806496453
+
+Velocity recording station       30 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    91870.0245168905
+
+Velocity recording station       31 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    90302.5030536758
+
+Velocity recording station       32 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    11259.1633494348
+
+Velocity recording station       33 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    3379.00349100353
+
+Velocity recording station       35 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    24677.5341520006
+
+Velocity recording station       36 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    82720.1668263820
+
+Velocity recording station       37 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    5491.80688986221
+
+Velocity recording station       38 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    390.580647580282
+
+Velocity recording station       40 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    320.590873550741
+
+Velocity recording station       45 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    162.772548212099
+
+Velocity recording station       48 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    398.009282299107
+
+Velocity recording station       49 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    7958.60760192468
+
+Velocity recording station       50 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    7784.57762184876
+
+Velocity recording station       51 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    4959.65473688587
+
+Velocity recording station       52 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    8167.91902583526
+
+ MET Station Locations Contained in fort.15
+Meteorological station            1 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1169435.40899746
+
+Meteorological station            2 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1203865.40989067
+
+Meteorological station            3 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1174248.61154435
+
+Meteorological station            4 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1156978.89822047
+
+Meteorological station            5 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1145832.83743952
+
+Meteorological station            6 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1146565.48786702
+
+Meteorological station            7 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1144790.93799097
+
+Meteorological station            8 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    1040541.45828857
+
+Meteorological station            9 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    834056.296008805
+
+Meteorological station           10 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    726889.940647328
+
+Meteorological station           11 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    616210.995294672
+
+Meteorological station           12 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    551762.834859589
+
+Meteorological station           13 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    417876.436781021
+
+Meteorological station           14 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    323914.595352888
+
+Meteorological station           15 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    258651.365314436
+
+Meteorological station           16 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    268968.212241525
+
+Meteorological station           17 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    308633.971681872
+
+Meteorological station           18 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    333143.885976827
+
+Meteorological station           19 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    282256.977158700
+
+Meteorological station           20 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    257491.450594111
+
+Meteorological station           21 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    245768.599650018
+
+Meteorological station           22 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    206084.284091728
+
+Meteorological station           23 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    184804.957469978
+
+Meteorological station           24 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    91002.3478048919
+
+Meteorological station           25 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    55350.3770457469
+
+Meteorological station           26 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    104414.391996770
+
+Meteorological station           27 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    123809.322318315
+
+Meteorological station           28 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    196639.775271293
+
+Meteorological station           29 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    172674.806496453
+
+Meteorological station           30 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    91870.0245168905
+
+Meteorological station           31 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    90302.5030536758
+
+Meteorological station           32 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    11259.1633494348
+
+Meteorological station           33 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    3379.00349100353
+
+Meteorological station           35 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    24677.5341520006
+
+Meteorological station           36 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    82720.1668263820
+
+Meteorological station           37 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    5491.80688986221
+
+Meteorological station           38 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    390.580647580282
+
+Meteorological station           40 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    320.590873550741
+
+Meteorological station           45 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    162.772548212099
+
+Meteorological station           48 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    398.009282299107
+
+Meteorological station           49 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    7958.60760192468
+
+Meteorological station           50 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    7784.57762184876
+
+Meteorological station           51 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    4959.65473688587
+
+Meteorological station           52 does not lie in the grid.
+ Please check the coordinates.
+ The program will estimate nearest element.
+ WARNING. Distance to nearest element is    8167.91902583526
+
+
+ memory currently allocated =     18180812  bytes
+ memory high water mark     =    868607288  bytes
+
+ INFO: Fulldomain fort.15 file read successfully.
+ INFO: Initializing the netCDF output files.
+
+ Determine the parameters MNPP and MNEP
+  Setting MNPP =         4299
+  Setting MNEP =         6968
+ Allocate arrays dimensioned by MNPP and MNEP
+ from alloc_main2:
+
+ memory currently allocated =     22820404  bytes
+ memory high water mark     =    868607288  bytes
+
+
+ Decomposition of grid begins
+ Decomposition Data
+ DOMAIN  RES_NODES  GHOST_NODES  TOT_NODES  ELEMENTS
+ ------  ---------  -----------  ---------  --------
+ GLOBAL                            141993     233477
+ PE0000      3922        106         4028       6573
+ PE0001      3984        121         4105       6797
+ PE0002      3997         36         4033       6460
+ PE0003      3988        111         4099       6816
+ PE0004      4040         56         4096       6394
+ PE0005      3977         51         4028       6632
+ PE0006      3856         68         3924       6352
+ PE0007      3740         51         3791       6683
+ PE0008      3702         64         3766       6519
+ PE0009      3925         68         3993       6438
+ PE0010      3781        139         3920       6519
+ PE0011      3913         31         3944       6366
+ PE0012      3958         45         4003       6448
+ PE0013      4253         46         4299       6534
+ PE0014      4166         69         4235       6471
+ PE0015      3892         44         3936       6503
+ PE0016      4077         74         4151       6480
+ PE0017      3799        171         3970       6496
+ PE0018      3849         74         3923       6391
+ PE0019      4061        110         4171       6775
+ PE0020      4068         40         4108       6707
+ PE0021      3901         85         3986       6486
+ PE0022      3861         77         3938       6968
+ PE0023      3937         99         4036       6896
+ PE0024      4119        129         4248       6729
+ PE0025      4006         82         4088       6831
+ PE0026      3956         73         4029       6825
+ PE0027      3869         49         3918       6315
+ PE0028      3452         82         3534       5561
+ PE0029      3718        109         3827       6525
+ PE0030      3586         98         3684       6442
+ PE0031      4107         15         4122       6652
+ PE0032      4046         45         4091       6594
+ PE0033      4176         23         4199       6519
+ PE0034      4178         69         4247       6617
+ PE0035      4133         30         4163       6647
+ Decomposition successful
+ Writing Local UNIT 14 (Grid) File for each PE
+ERROR: The land boundary number 562 is only one node long in subdomain 14.
+INFO: Eliminating hanging boundary node from this subdomain.
+ERROR: The land boundary number 1278 is only one node long in subdomain 14.
+INFO: Eliminating hanging boundary node from this subdomain.
+ERROR: The land boundary number 69 is only one node long in subdomain 25.
+INFO: Eliminating hanging boundary node from this subdomain.
+ERROR: The land boundary number 785 is only one node long in subdomain 25.
+INFO: Eliminating hanging boundary node from this subdomain.
+
+ Boundary Node Decomposition Data
+ DOMAIN      NOPE    NETA    NBOU  NVEL    NWEIR
+ GLOBAL       3     160    1429   74385       0
+ PE0000       1      31      35    2467       0
+ PE0001       0       0      37    1751       0
+ PE0002       0       0      33    2524       0
+ PE0003       1      14      41    2142       0
+ PE0004       0       0      17    2380       0
+ PE0005       1      40      58    1995       0
+ PE0006       0       0      39    1885       0
+ PE0007       0       0      56    1860       0
+ PE0008       0       0      26    1972       0
+ PE0009       0       0      41    3047       0
+ PE0010       0       0      31    2093       0
+ PE0011       0       0       9    1620       0
+ PE0012       0       0      19    1750       0
+ PE0013       0       0      33    2770       0
+ PE0014       0       0      39    3032       0
+ PE0015       0       0      23    1518       0
+ PE0016       0       0      73    2637       0
+ PE0017       0       0      25    1929       0
+ PE0018       0       0      85    2171       0
+ PE0019       0       0      69    2613       0
+ PE0020       2      38      48    2479       0
+ PE0021       0       0     105    2664       0
+ PE0022       0       0      41    1036       0
+ PE0023       0       0      81    1487       0
+ PE0024       0       0      75    3001       0
+ PE0025       0       0      53    1513       0
+ PE0026       0       0     102    1811       0
+ PE0027       0       0      17    1542       0
+ PE0028       0       0      21    1612       0
+ PE0029       0       0      27    1290       0
+ PE0030       0       0      21    1207       0
+ PE0031       0       0      23    1756       0
+ PE0032       0       0      38    2173       0
+ PE0033       1      43      53    2958       0
+ PE0034       0       0      50    2368       0
+ PE0035       0       0      19    1881       0
+ Writing Local UNIT 15 (Run Info) File for each PE
+
+ Station Data
+ DOMAIN      NSTAE   NSTAV    NSTAC    NSTAM
+ GLOBAL      57      57       0      57
+ PE0000      35      35       0      35
+ PE0001       0       0       0       0
+ PE0002       1       1       0       1
+ PE0003       1       1       0       1
+ PE0004       0       0       0       0
+ PE0005       5       5       0       5
+ PE0006       0       0       0       0
+ PE0007       0       0       0       0
+ PE0008       0       0       0       0
+ PE0009       1       1       0       1
+ PE0010       0       0       0       0
+ PE0011       1       1       0       1
+ PE0012       2       2       0       2
+ PE0013       0       0       0       0
+ PE0014       1       1       0       1
+ PE0015       4       4       0       4
+ PE0016       1       1       0       1
+ PE0017       1       1       0       1
+ PE0018       0       0       0       0
+ PE0019       0       0       0       0
+ PE0020       0       0       0       0
+ PE0021       0       0       0       0
+ PE0022       0       0       0       0
+ PE0023       1       1       0       1
+ PE0024       0       0       0       0
+ PE0025       0       0       0       0
+ PE0026       0       0       0       0
+ PE0027       0       0       0       0
+ PE0028       0       0       0       0
+ PE0029       0       0       0       0
+ PE0030       0       0       0       0
+ PE0031       0       0       0       0
+ PE0032       1       1       0       1
+ PE0033       0       0       0       0
+ PE0034       1       1       0       1
+ PE0035       1       1       0       1
+ INFO: The swaninit file was found.
+ INFO: Parsing swaninit file for swan command file name.
+ INFO: The swan command file is 'fort.26'.
+ INFO: The swan command file 'fort.26' was found.
+ Writing Message-Passing Info Files for each PE
+
+ Communication Data
+ DOMAIN  COMM_PE  %(SURF/VOL)
+ ------  -------  -----------
+ PE0000        6      2.70
+ PE0001        4      3.04
+ PE0002        1      0.90
+ PE0003        4      2.78
+ PE0004        3      1.39
+ PE0005        5      1.28
+ PE0006        4      1.76
+ PE0007        5      1.36
+ PE0008        4      1.73
+ PE0009        5      1.73
+ PE0010        6      3.68
+ PE0011        2      0.79
+ PE0012        3      1.14
+ PE0013        2      1.08
+ PE0014        3      1.66
+ PE0015        3      1.13
+ PE0016        3      1.82
+ PE0017        6      4.50
+ PE0018        2      1.92
+ PE0019        5      2.71
+ PE0020        2      0.98
+ PE0021        3      2.18
+ PE0022        3      1.99
+ PE0023        2      2.51
+ PE0024        5      3.13
+ PE0025        4      2.05
+ PE0026        4      1.85
+ PE0027        2      1.27
+ PE0028        3      2.38
+ PE0029        4      2.93
+ PE0030        4      2.73
+ PE0031        1      0.37
+ PE0032        3      1.11
+ PE0033        3      0.55
+ PE0034        4      1.65
+ PE0035        1      0.73
+
+ memory currently allocated =     22820404  bytes
+ memory high water mark     =    868607288  bytes
+
+
+
+ Writing subdomain Nodal Attributes (unit 13)
+ file for each PE.
+File fort.13
+ WAS FOUND!  Opening & Processing file.
+
+     Finished processing mannings_n_at_sea_floor
+ for processor range            1  to           36
+     Finished processing primitive_weighting_in_continuity_equation
+ for processor range            1  to           36
+     Finished processing surface_canopy_coefficient
+ for processor range            1  to           36
+     Finished processing surface_directional_effective_roughness_length
+ for processor range            1  to           36
+     Finished processing surface_submergence_state
+ for processor range            1  to           36
+
+ memory currently allocated =     22820384  bytes
+ memory high water mark     =    868607288  bytes
+
+ Writing domain-decomposition file for post-processor
+
+ INFO: Finished pre-processing input files.
+
+
+ memory currently allocated =     22820384  bytes
+ memory high water mark     =    868607288  bytes
+
+ ADCPREP COMPLETED
+login4.stampede2(1020)$
